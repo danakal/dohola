@@ -40,46 +40,47 @@ h1, h2 {
 
 /* mobile first */
 
-.hidden img {
-  display: none;
-}
-
 .nav-bar {
   width: 100%;
   background-color:rgb(170, 204, 0);
   color: black; 
   font-size: 1.9rem;
 }
-.nav-items ul {
+
+.nav-bar__logo {
+  display: none;
+}
+
+.nav-bar__items ul {
   list-style-type: none;
   padding: 0px;
   margin: 0;
 }
 
-.nav-link {
+.nav-bar__items li{
+  display: block;
+} 
+
+.nav-bar__link {
   text-align: center;
   font-weight: 700;
 }
-.nav-link li {
+.nav-bar__link li {
   float: none;
 }
 
-.nav-items li{
-  display: block;
-  
-} 
-.nav-link a {
+.nav-bar__link a {
   color: black;
   text-decoration: none;
   display: block;
   padding: 1rem;
 }
 
-.nav-link :hover{
+.nav-bar__link :hover{
   background-color:#007f5f;
 }
 
-.nav-link a:hover {
+.nav-bar__link a:hover {
   color: #eeef20;
 }
 
@@ -93,52 +94,50 @@ h1, h2 {
     position: sticky;
     top: 0px;
   } 
-  .hidden img {
+  .nav-bar__logo {
     display: block;
-  }
-  
-  .logo img {
     height: 100%;
   }
-  .nav-items {
+  
+  .nav-bar__items {
     height: 8rem;
     display: flex;
     align-items: flex-end;
   } 
   
  
-  .nav-link {
+  .nav-bar__link {
     padding: 0px 1rem;
     margin-right: .4rem;
     height: 6rem;
   }
   
-  .nav-items ul {
+  .nav-bar__items ul {
     height: 6rem;
   }
-  .nav-items li {
+  .nav-bar__items li {
     float: left;
   }
 
-  .nav-items li a {
+  .nav-bar__items li a {
     display: block;
   }
   
-  .nav-active a {
+  .nav-bar__link--active a {
     color: black !important;
   }
   
-  .nav-link a {
+  .nav-bar__link a {
     color: #8a8a8a;
     text-decoration: none;
   }
     
-  .nav-link :hover {
+  .nav-bar__link :hover {
     background-color: rgba(170, 204, 0, 0.705);
     border-bottom: 1px solid black;
   }
   
-  .nav-link a:hover {
+  .nav-bar__link a:hover {
     color: black;
   }
 }
@@ -146,7 +145,7 @@ h1, h2 {
 
   /* cover foto začátek */
  
-  .cover-image {
+  .cover {
     background-image: linear-gradient(to right bottom, #eeef2085, #bfd20085),  url("./images/cover.jpg");
     height: 70vh;
     background-position: center;
@@ -157,11 +156,11 @@ h1, h2 {
     align-items: center;
   }
   
-  .cover-text {
+  .heading-primary {
     color: black;
   }
 
-  .cover-text-main {
+  .heading-primary--main {
     display: block;
     font-size: 6.5rem;
     letter-spacing: .3rem;
@@ -170,7 +169,7 @@ h1, h2 {
     animation: moveLeft 1s ease-out;
   }
 
-  .cover-text-additional {
+  .heading-primary--additional {
     display: block;
     font-size: 2.5rem;
     text-align: center;
@@ -210,12 +209,12 @@ h1, h2 {
   }
 
   @media (min-width: 600px) {
-    .cover-text-main {
+    .heading-primary--main {
       font-size: 10rem;
       letter-spacing: .7rem;
     }
 
-    .cover-text-additional {
+    .heading-primary--additional {
       font-size: 4.5rem;
       letter-spacing: .2rem;
     }
@@ -226,40 +225,41 @@ h1, h2 {
 
   /* propagační boxy začátek */
 
-    .points-container {
+    .point-box {
       display: grid;
       grid-template-columns: 1fr;
       margin: 2rem;
       font-size: 1.6rem;
     }
 
-    .point {
+    .point-box__item {
       padding: 2rem;
     }
 
-    h3 {
+    .heading-terciary {
       letter-spacing: .3rem;
       font-weight: 900;
+      text-transform: uppercase;
     }
 
-    .point img {
+    .point-box__item img {
       float: left;
       margin-right: 1rem;
     }
 
     
     @media (min-width: 768px) {
-      .points-container {
+      .point-box {
         grid-template-columns: repeat(2, 1fr); 
         margin: 8rem 10rem;
       } 
-      .point {
+      .point-box__item {
         padding: 2rem 3rem;
       }
     }
     
     @media (min-width: 1024px) { 
-      .points-container {
+      .point-box {
         grid-template-columns: repeat(3, 1fr);
         margin: 8rem 15rem;
       } 
@@ -270,7 +270,7 @@ h1, h2 {
     /*propagační boxy konec */
     
     /*naše služby začátek + nastavení containeru kontakty*/
-    .offer-container, .contacts-container {
+    .offer-box, .contact-box {
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
@@ -280,38 +280,38 @@ h1, h2 {
       font-size: 1.6rem;
     }
     
-    h2 {
+    .heading-secondary {
       font-size: 5rem;
       text-align: center;
       
     }
     
-    .picture {
+    .offer-box__picture {
       display: flex;
       flex-flow: column; 
       background-color: white;
       justify-self: center;
     }
     
-    div.picture {
+    div.offer-box__picture {
       margin: 1.5rem;
       border: 1px solid #003104;
       width: 25rem;
       flex: 1 1 auto;
-      border-radius: 5%;; 
+      border-radius: 3%;; 
     }
     
-    div.picture:hover {
+    div.offer-box__picture:hover {
       transform: scale(1.05);
     }
     
-    .picture img {
+    .offer-box__picture img {
       width: 100%;
       height: auto;
-      border-radius: 5% 5% 0 0;
+      border-radius: 3% 3% 0 0;
     }
     
-    div.short-text-offer {
+    .heading-terciary {
       padding: 1.5rem;
       text-align: center;
       color: #003104;
@@ -320,44 +320,44 @@ h1, h2 {
     
     
     @media (min-width: 768px) {
-      .offer-container, .contacts-container {
+      .offer-box, .contact-box {
         grid-template-columns: repeat(3, 1fr);
         padding-bottom: 6rem;
       }
       
-      .offer-container h2, .contacts-container h2 {
+      .offer-box h2, .contact-box h2 {
         font-size: 7rem;
         grid-area: 1 / 1 / 1 / 4;
         margin: 30px auto;
       }
 
-      div.picture {
+      div.offer-box__picture {
         width: 21rem;
         margin: .5rem;
       }
-      .human, .logo-html {
+      .picture--end {
         grid-area: 2 / 1 / 2 / 2;
         justify-self: end;
       }
       
-      .animal, .logo-css {
+      .picture--center {
         grid-area: 2/2/2/3;
         justify-self: center;
       }
 
-      .gift, .foto-dana {
+      .picture--start {
         grid-area: 2/3/2/4;
         justify-self: start;
       }
 
-      h2 {
+      .header-secondary {
         font-size: 7rem;
       }  
     }
 
   @media (min-width: 1024px) {
     
-    div.picture {
+    div.offer-box__picture {
       width: 30rem;
       margin: .5rem;
     }
@@ -367,13 +367,13 @@ h1, h2 {
   
   /* text o nás začátek */
   
-  .text-introduction {
+  .introduction-box {
     margin: 2rem 7rem;
     font-size: 2rem;
   }
   
   @media (min-width: 1024px) {
-    .text-introduction {
+    .introduction-box {
       margin: 2rem 20%;
       padding: 5rem;
     }
@@ -382,36 +382,26 @@ h1, h2 {
   /* text o nás konec*/
 
   /* kontakty začátek */
-  .contact {
+  .contact-box__item {
     width: 20rem;
     display: flex;
     flex-flow: column; 
     justify-self: center;
   }
   
-  .contact img {
+  .contact-box__item img {
     width: 100%;
     border-radius: 50%;
     align-content: center;  
   }
 
-  .contact p {
+  .contact-box__item p {
     text-align: center;
     font-weight: 700; 
   }
-  .name-contacts {
-    font-family:'Pacifico', cursive;
-    font-size: 2.8rem;
-    font-weight: 900;
-    letter-spacing: .3rem;
-    margin: 1rem;
-  } 
+  
 
-  .text-contacts {
-    margin: 1rem 0 2rem 0;
-  }
-
-  .text-contacts a {
+  .contact-box__item a {
     color: #2B9348;
     font-weight: 900;
   }

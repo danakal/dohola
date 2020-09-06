@@ -12,35 +12,35 @@
 <body>
     
   <!-- navigační lišta začátek -->  
-    <nav class="nav-bar">
-        <div class="logo hidden">
-            <img src="./images/logo.png" alt="logo Dohola!">
-        </div>
- 
-        <div class="nav-items ">
-            <ul>
-                <li class="nav-link nav-active">
-                    <a href="index.html">Domů</a>
-                </li>
-                <li class="nav-link">
-                    <a href="sluzby.html">Služby</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#contacts">Kontakty</a>
-                </li>
-            </ul>
-        </div>
-        
-    </nav>
+  <nav class="nav-bar">
+    <div class="nav-bar__logo">
+        <img src="./images/logo.png" alt="logo Dohola!">
+    </div>
+
+    <div class="nav-bar__items">
+        <ul>
+            <li class="nav-bar__link nav-bar__link--active">
+                <a href="index.html">Domů</a>
+            </li>
+            <li class="nav-bar__link">
+                <a href="sluzby.html">Služby</a>
+            </li>
+            <li class="nav-bar__link">
+                <a href="#contacts">Kontakty</a>
+            </li>
+        </ul>
+    </div>
+    
+  </nav>
 
   <!-- navigační lišta konec -->
 
   <!-- cover foto začátek -->
-  <section class="cover-image">
-      <div class="cover-text-box">
-          <h1 class="cover-text">
-              <span class="cover-text-main">Dohola!</span>
-              <span class="cover-text-additional">Kadeřnictví pro všechny</span>
+  <section class="cover">
+      <div>
+          <h1 class="heading-primary">
+              <span class="heading-primary--main">Dohola!</span>
+              <span class="heading-primary--additional">Kadeřnictví pro všechny</span>
            </h1>
         </div>
     </section>
@@ -48,42 +48,42 @@
   <!-- cover foto konec -->
 
   <!-- propagační body začátek -->
-    <section class="points-container">
+    <section class="point-box">
         
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Úspora času</h3>
+                <h3 class="heading-terciary">Úspora času</h3>
                 <p>Česání, mytí, vysoušení, barvení, tužení... To vše odpadá.</p>
             </div>
 
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Úspora peněz</h3>
+                <h3 class="heading-terciary">Úspora peněz</h3>
                 <p>Žádné šampony, kondicionery, barvy, drahé služby kadeřníků. </p>
             </div>
 
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Zlepšení zdraví</h3>
+                <h3 class="heading-terciary">Zlepšení zdraví</h3>
                 <p>Konec alergií způsobených ochlupenými zvířaty.</p>
             </div>
        
         
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Méně úklidu</h3>
+                <h3 class="heading-terciary">Méně úklidu</h3>
                 <p>Konec nekonečného vysávání chlupů a vytahování vlasů z vodních odpadů. </p>
             </div>
 
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Spokojenější život</h3>
+                <h3 class="heading-terciary">Spokojenější život</h3>
                 <p>Delší spánek, více peněz, méně úklidu. Nemusíte přemýšlet o barvě vlasů či účesu. Vítr vám nemá co rozfoukat!</p>
             </div>
 
-            <div class="point">
+            <div class="point-box__item">
                 <img src="./images/logo_cerne.png" alt="logo" width="60px">
-                <h3>Originální dárky</h3>
+                <h3 class="heading-terciary">Originální dárky</h3>
                 <p>100% přírody, 0% chemie. Funkčnost všech prodávaných směsí testována.</p>
             </div>
         
@@ -92,25 +92,25 @@
  
   <!-- nabídka služeb  začátek -->
   
-  <main class="offer-container">
-    <h2>Naše služby</h2>
-        <div class="picture human">
+  <main class="offer-box">
+    <h2 class="heading-secondary">Naše služby</h2>
+        <div class="offer-box__picture picture--end">
             <a target="_self" href="sluzby.html">
               <img src="./images/humanoid.jpg" width="300" alt="obrázek humanoid">
             </a>
-            <div class="short-text-offer"> Nabídka služeb pro Humanoidy</div>
+            <h3 class="heading-terciary"> Nabídka služeb pro Humanoidy</h3>
         </div>
-        <div class="picture animal">
+        <div class="offer-box__picture picture--center">
             <a target="_self" href="sluzby.html">
                 <img src="./images/animoid.jpg" width="300" alt="obrázek animoid">
             </a>
-            <div class="short-text-offer"> Nabídka služeb pro Animály</div>
+            <h3 class="heading-terciary"> Nabídka služeb pro Animály</h3>
         </div>
-        <div class="picture gift">
+        <div class="offer-box__picture picture--start">
             <a target="_self" href="sluzby.html">
                 <img src="./images/gift.jpg" width="300" alt="obrázek dárek">
             </a>
-            <div class="short-text-offer"> Dárkový prodej</div>
+            <h3 class="heading-terciary"> Dárkový prodej</h3>
         </div>
   </main>
 
@@ -120,8 +120,8 @@
     
     
     
-    <article class="text-introduction">
-      <h2> Náš příběh</h2>
+    <article class="introduction-box">
+      <h2 class="heading-secondary"> Náš příběh</h2>
           <p>Uvědomili jsme si, kolik času, jehož nedostatek je dnes velkým zdrojem stresu, jsme trávili údržbou vlasů. Pravidelné mytí, zdlouhavé sušení, česání, barvení, úprava. Neustálé uklízení a čištění odtoků van a sprch. A kolik peněz to stálo! Víte, jaká zdravotní rizika vlasy a chlupy, tyto keratinové útvary produkované těly savců, přináší do našich životů? Vši, roztoči, alergie. Řekli jsme si: "A dost!" Už jsme nechtěli dále žít s vlasy a chlupy. Odstranili jsme je z našich životů a  otevřela se nám nová dimenze. Tuto dimenzi chceme sdílet i s Vámi.  Jsme tu pro všechny humanoidy i animály, kteří nás do této dimenze chtějí následovat. Zbavíme vás nechtěných vlasů i chlupů! Sjednejte si návštěvu ještě dnes! </p>
           <p>Vzhledem k velkému zájmu našich zákazníků jsme rozšířili naše služby o doplňkový prodej. Původně jsme nabízeli jen vlasy a chlupy získané naší činnosti, které jsme se rozhodli v souladu s principy trvalé udržitelnosti znovu využívat (tzv. reuse). Vlasy a chlupy spolehlivě odpuzují nevítanou návštěvu z říše animálů v domech či zahradách. My jsme šli dál! Multiplikovali jsme jejich účinek využitím vybraných exkrementů (medvěd, tygr, vlk apod.). Vzniklé unikátní směsi spolehlivě odpuzují komáry, lasičky, bobry či tchýně. </p>
     </article>
@@ -130,25 +130,25 @@
 
    <!-- kontakty začátek -->
 
-   <section class="contacts-container">
-       <h2 id="contacts">Kontakty</h2>
-            <div class="contact logo-html">
+   <section class="contact-box">
+       <h2 class="heading-secondary" id="contacts">Kontakty</h2>
+            <div class="contact-box__item picture--end">
                 <img src="./images/logo_HTML.png" alt="logo HTML">
-                <p class="name-contacts">HTML5</p>
+                <h3 class="heading-terciary">HTML5</h3>
                 <p class="text-contacts">Základní stavební kámen týmu Dohola!. Bez něj bychom nebyli. Najdete ho všude kolem sebe.</p>
                 
 
             </div>
 
-            <div class="contact logo-css">
+            <div class="contact-box__item picture--center">
                 <img src="./images/logo_CSS.png" alt="logo CSS">
-                <p class="name-contacts">CSS3</p>
+                <h3 class="heading-terciary">CSS3</h3>
                 <p class="text-contacts">Stojí za všemi vylepšeními, které dělají svět krásnějším. Najdete ho taky úplně všude (tady momentálně na 432 řádcích. Ufff!).</p>
             </div>
 
-            <div class="contact foto-dana">
+            <div class="contact-box__item picture--start">
                 <img src="./images/fotka_moje.jpg" alt="foto Dana">
-                <p class="name-contacts">Dana</p>
+                <h3 class="heading-terciary">Dana</h3>
                 <p class="text-contacts">Udržuje dobré vztahy v našem týmu a stará se o to, aby všechno fungovalo, jak má. Najdete ji v Brně a na <a href="http://www.linkedin.com/in/dana-kalcikova">  LinkedIn </a></p>
 
             </div>
